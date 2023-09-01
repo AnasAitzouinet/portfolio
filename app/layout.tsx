@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Poppins, Roboto } from "next/font/google";
 import { NextUIProvider } from "@nextui-org/system";
+import { Analytics } from '@vercel/analytics/react';
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -23,6 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
+        <Analytics />
+
       </body>
     </html>
   );
