@@ -66,13 +66,13 @@ const Nav = () => {
           <a href="/">Home</a>
         </li>
         <li className="hover:text-white hover:scale-125  hover:px-2 transition-all duration-300 ease-in-out">
-          <a href="/">About me</a>
+          <a href="#about_me">About me</a>
         </li>
         <li className="hover:text-white hover:scale-125  hover:px-2 transition-all duration-300 ease-in-out">
-          <a href="/">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li className="hover:text-white hover:scale-125  hover:px-2 transition-all duration-300 ease-in-out">
-          <a href="/">Projects</a>
+          <a href="#Projects">Projects</a>
         </li>
       </ul>
     </nav>
