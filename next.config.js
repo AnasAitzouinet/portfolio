@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+module.exports = {
+    // Other Next.js configuration...
+    async rewrites() {
+      return [
+        {
+          source: '/fonts/:path*',
+          destination: '/fonts/:path*',
+        },
+      ];
+    },
+    images: {
+      domains: ['apod.nasa.gov'],
+    },
+  };

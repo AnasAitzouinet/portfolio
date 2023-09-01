@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Contact from "@/components/Contact";
 import { Fragment, useRef, useState } from 'react'
+import Carousels from "@/components/Carrousel";
 
 const skils = [
   {
@@ -66,7 +67,9 @@ const skils = [
     image: "/ts.png",
   },
 ];
+
 const About = () => {
+  const [panels, setPanels] = useState([0, 1, 2, 3, 4]);
   const [opens, setOpens] = useState(false)
   const cancelButtonRefs = useRef(null)
   return (
@@ -86,18 +89,20 @@ const About = () => {
       <h1 className="text-center my-10 text-2xl underline underline-offset-8">
         Skills
       </h1>
-      <div className=" flex flex-row flex-wrap text-center">
-        {skils.map((skill) => (
-          <div className="border border-dashed p-10" key={skill.id}>
+      <div className="">
+      <div className="">
+        {/* {skils.map((skill) => (
+          <div className="snap-center"  key={skill.id}>
             <Image
               src={skill.image}
-              className="p-1"
+              className="m-5"
               alt={skill.name}
-              width={150}
-              height={150}
+              width={500}
+              height={500}
             />
           </div>
-        ))}
+        ))} */}
+        </div>
       </div>
       <div className="flex flex-row justify-center ">  
         <button
