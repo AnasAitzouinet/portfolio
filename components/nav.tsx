@@ -35,16 +35,16 @@ const Nav = () => {
         <SheetContent className="bg-  border-none shadow-none" side={"left"}>
           <ul className=" flex flex-col  gap-5 text-xl text-[#f9f0facc] font-light uppercase">
             <li className="text-white ">
-              <a href="/">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li className="text-white ">
-              <a href="/">About me</a>
+              <a href="#about_me">About me</a>
             </li>
             <li className="text-white ">
-              <a href="/">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li className="text-white ">
-              <a href="/">Projects</a>
+              <a href="#Projects">Projects</a>
             </li>
           </ul>
           <SheetClose asChild>

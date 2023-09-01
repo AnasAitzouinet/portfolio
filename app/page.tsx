@@ -228,7 +228,7 @@ export default function Home() {
         <Nav />
       </header>
       <main className="pt-10">
-        <section className="grid sm:grid-cols-2 h-[89vh]  ">
+        <section className="grid sm:grid-cols-2 h-[89vh]  " id="home">
           <aside className="flex flex-col justify-center w-full items-center py-20">
             <p className="text-[40px]  sm:text-[86px] font-light text-white/60 sm:leading-[4rem] px-5">
               Hello i&apos;m <span className="text-white">Anas</span> <br />
@@ -263,7 +263,7 @@ export default function Home() {
           sm:mx-10 rounded-xl mt-60 mx-2
           bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg"
         >
-          <h1 className="sm:text-[60px] uppercase py-5 text-white font-thin">
+          <h1 className="sm:text-[60px] uppercase py-5 text-white font-thin" id="about_me">
             About me
           </h1>
           <p className="sm:text-xl   text-white/60 text-center sm:px-10 ">
@@ -307,7 +307,7 @@ export default function Home() {
           ))}
         </article>
         <h1
-          id="skills"
+          id="Projects"
           className="sm:text-[60px] text-[30px] uppercase mt-10 text-white font-thin text-center bg-white/5
         border  sm:w-1/2 sm:mx-auto mx-5 border-white/10 shadow-lg  rounded-xl
         backdrop-blur-xl"
